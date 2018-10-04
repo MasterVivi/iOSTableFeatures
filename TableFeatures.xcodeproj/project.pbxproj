@@ -7,21 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7315555C21275B570003CD04 /* ExpandHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7315555B21275B570003CD04 /* ExpandHeaderView.swift */; };
+		7315555E21275B790003CD04 /* ExpandHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7315555D21275B790003CD04 /* ExpandHeaderView.xib */; };
+		737136952166370700944AB3 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737136942166370700944AB3 /* BaseView.swift */; };
+		737136972166382200944AB3 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737136962166382200944AB3 /* UIViewExtensions.swift */; };
+		7371369B21663B6800944AB3 /* BaseTableHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7371369A21663B6800944AB3 /* BaseTableHeaderFooterView.swift */; };
+		7371369D2166590400944AB3 /* ExpandFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7371369C2166590400944AB3 /* ExpandFooterView.swift */; };
+		7371369F2166593000944AB3 /* ExpandFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7371369E2166593000944AB3 /* ExpandFooterView.xib */; };
 		73AF519C21068202004F8843 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AF519B21068202004F8843 /* AppDelegate.swift */; };
-		73AF519E21068202004F8843 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AF519D21068202004F8843 /* ViewController.swift */; };
 		73AF51A121068202004F8843 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73AF519F21068202004F8843 /* Main.storyboard */; };
 		73AF51A321068203004F8843 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73AF51A221068203004F8843 /* Assets.xcassets */; };
 		73AF51A621068203004F8843 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73AF51A421068203004F8843 /* LaunchScreen.storyboard */; };
+		73AF51B1210A5AC8004F8843 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AF51B0210A5AC8004F8843 /* HomeViewController.swift */; };
+		73AF51B3210A5B00004F8843 /* ExpandCollapseSectionDynamicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AF51B2210A5B00004F8843 /* ExpandCollapseSectionDynamicViewController.swift */; };
+		73AF51B6210A5F29004F8843 /* TableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AF51B5210A5F29004F8843 /* TableTest.swift */; };
+		73AF51B9210A603B004F8843 /* TestDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AF51B8210A603B004F8843 /* TestDataProcessor.swift */; };
+		73AF51BB210BA03F004F8843 /* CellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AF51BA210BA03F004F8843 /* CellContent.swift */; };
+		73AF51BF210BA710004F8843 /* DynamicContentCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AF51BE210BA710004F8843 /* DynamicContentCell1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7315555B21275B570003CD04 /* ExpandHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandHeaderView.swift; sourceTree = "<group>"; };
+		7315555D21275B790003CD04 /* ExpandHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpandHeaderView.xib; sourceTree = "<group>"; };
+		737136942166370700944AB3 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		737136962166382200944AB3 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		7371369A21663B6800944AB3 /* BaseTableHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableHeaderFooterView.swift; sourceTree = "<group>"; };
+		7371369C2166590400944AB3 /* ExpandFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandFooterView.swift; sourceTree = "<group>"; };
+		7371369E2166593000944AB3 /* ExpandFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpandFooterView.xib; sourceTree = "<group>"; };
 		73AF519821068202004F8843 /* TableFeatures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableFeatures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73AF519B21068202004F8843 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		73AF519D21068202004F8843 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		73AF51A021068202004F8843 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73AF51A221068203004F8843 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73AF51A521068203004F8843 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73AF51A721068203004F8843 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73AF51B0210A5AC8004F8843 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		73AF51B2210A5B00004F8843 /* ExpandCollapseSectionDynamicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandCollapseSectionDynamicViewController.swift; sourceTree = "<group>"; };
+		73AF51B5210A5F29004F8843 /* TableTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTest.swift; sourceTree = "<group>"; };
+		73AF51B8210A603B004F8843 /* TestDataProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataProcessor.swift; sourceTree = "<group>"; };
+		73AF51BA210BA03F004F8843 /* CellContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellContent.swift; sourceTree = "<group>"; };
+		73AF51BE210BA710004F8843 /* DynamicContentCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicContentCell1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +59,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7371368F2166365000944AB3 /* TableTests */ = {
+			isa = PBXGroup;
+			children = (
+				73713693216636A900944AB3 /* Cells */,
+				73713692216636A100944AB3 /* Headers */,
+				737136912166369200944AB3 /* Footers */,
+			);
+			path = TableTests;
+			sourceTree = "<group>";
+		};
+		737136902166366F00944AB3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				737136942166370700944AB3 /* BaseView.swift */,
+				737136962166382200944AB3 /* UIViewExtensions.swift */,
+				7371369A21663B6800944AB3 /* BaseTableHeaderFooterView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		737136912166369200944AB3 /* Footers */ = {
+			isa = PBXGroup;
+			children = (
+				7371369C2166590400944AB3 /* ExpandFooterView.swift */,
+				7371369E2166593000944AB3 /* ExpandFooterView.xib */,
+			);
+			path = Footers;
+			sourceTree = "<group>";
+		};
+		73713692216636A100944AB3 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				7315555B21275B570003CD04 /* ExpandHeaderView.swift */,
+				7315555D21275B790003CD04 /* ExpandHeaderView.xib */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		73713693216636A900944AB3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				73AF51BE210BA710004F8843 /* DynamicContentCell1.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		73AF518F21068202004F8843 = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +124,68 @@
 		73AF519A21068202004F8843 /* TableFeatures */ = {
 			isa = PBXGroup;
 			children = (
+				73AF51B4210A5F09004F8843 /* Model */,
+				73AF51B7210A601E004F8843 /* Data */,
+				73AF51AD210A5A4F004F8843 /* Controllers */,
+				73AF51BC210BA6B7004F8843 /* Views */,
 				73AF519B21068202004F8843 /* AppDelegate.swift */,
-				73AF519D21068202004F8843 /* ViewController.swift */,
 				73AF519F21068202004F8843 /* Main.storyboard */,
 				73AF51A221068203004F8843 /* Assets.xcassets */,
 				73AF51A421068203004F8843 /* LaunchScreen.storyboard */,
 				73AF51A721068203004F8843 /* Info.plist */,
 			);
 			path = TableFeatures;
+			sourceTree = "<group>";
+		};
+		73AF51AD210A5A4F004F8843 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				73AF51AF210A5A7D004F8843 /* TableTests */,
+				73AF51AE210A5A66004F8843 /* Launch */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		73AF51AE210A5A66004F8843 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				73AF51B0210A5AC8004F8843 /* HomeViewController.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		73AF51AF210A5A7D004F8843 /* TableTests */ = {
+			isa = PBXGroup;
+			children = (
+				73AF51B2210A5B00004F8843 /* ExpandCollapseSectionDynamicViewController.swift */,
+			);
+			path = TableTests;
+			sourceTree = "<group>";
+		};
+		73AF51B4210A5F09004F8843 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				73AF51B5210A5F29004F8843 /* TableTest.swift */,
+				73AF51BA210BA03F004F8843 /* CellContent.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		73AF51B7210A601E004F8843 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				73AF51B8210A603B004F8843 /* TestDataProcessor.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		73AF51BC210BA6B7004F8843 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				737136902166366F00944AB3 /* Extensions */,
+				7371368F2166365000944AB3 /* TableTests */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,7 +246,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7371369F2166593000944AB3 /* ExpandFooterView.xib in Resources */,
 				73AF51A621068203004F8843 /* LaunchScreen.storyboard in Resources */,
+				7315555E21275B790003CD04 /* ExpandHeaderView.xib in Resources */,
 				73AF51A321068203004F8843 /* Assets.xcassets in Resources */,
 				73AF51A121068202004F8843 /* Main.storyboard in Resources */,
 			);
@@ -135,8 +261,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73AF519E21068202004F8843 /* ViewController.swift in Sources */,
+				73AF51B9210A603B004F8843 /* TestDataProcessor.swift in Sources */,
 				73AF519C21068202004F8843 /* AppDelegate.swift in Sources */,
+				73AF51B3210A5B00004F8843 /* ExpandCollapseSectionDynamicViewController.swift in Sources */,
+				73AF51B6210A5F29004F8843 /* TableTest.swift in Sources */,
+				73AF51B1210A5AC8004F8843 /* HomeViewController.swift in Sources */,
+				7371369B21663B6800944AB3 /* BaseTableHeaderFooterView.swift in Sources */,
+				7315555C21275B570003CD04 /* ExpandHeaderView.swift in Sources */,
+				737136972166382200944AB3 /* UIViewExtensions.swift in Sources */,
+				737136952166370700944AB3 /* BaseView.swift in Sources */,
+				73AF51BB210BA03F004F8843 /* CellContent.swift in Sources */,
+				73AF51BF210BA710004F8843 /* DynamicContentCell1.swift in Sources */,
+				7371369D2166590400944AB3 /* ExpandFooterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
