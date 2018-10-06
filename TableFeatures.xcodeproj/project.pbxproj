@@ -14,6 +14,11 @@
 		7371369B21663B6800944AB3 /* BaseTableHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7371369A21663B6800944AB3 /* BaseTableHeaderFooterView.swift */; };
 		7371369D2166590400944AB3 /* ExpandFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7371369C2166590400944AB3 /* ExpandFooterView.swift */; };
 		7371369F2166593000944AB3 /* ExpandFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7371369E2166593000944AB3 /* ExpandFooterView.xib */; };
+		737136A12166691500944AB3 /* HideableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737136A02166691500944AB3 /* HideableObject.swift */; };
+		737136A32166766300944AB3 /* SectionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737136A22166766300944AB3 /* SectionObject.swift */; };
+		737136A5216678D300944AB3 /* HideShowSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737136A4216678D300944AB3 /* HideShowSectionController.swift */; };
+		737136A7216796F200944AB3 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737136A6216796F200944AB3 /* BaseCell.swift */; };
+		737136A92167998C00944AB3 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737136A82167998C00944AB3 /* UITableViewExtensions.swift */; };
 		73AF519C21068202004F8843 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AF519B21068202004F8843 /* AppDelegate.swift */; };
 		73AF51A121068202004F8843 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73AF519F21068202004F8843 /* Main.storyboard */; };
 		73AF51A321068203004F8843 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73AF51A221068203004F8843 /* Assets.xcassets */; };
@@ -21,7 +26,7 @@
 		73AF51B1210A5AC8004F8843 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AF51B0210A5AC8004F8843 /* HomeViewController.swift */; };
 		73AF51B3210A5B00004F8843 /* ExpandCollapseSectionDynamicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AF51B2210A5B00004F8843 /* ExpandCollapseSectionDynamicViewController.swift */; };
 		73AF51B6210A5F29004F8843 /* TableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AF51B5210A5F29004F8843 /* TableTest.swift */; };
-		73AF51B9210A603B004F8843 /* TestDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AF51B8210A603B004F8843 /* TestDataProcessor.swift */; };
+		73AF51B9210A603B004F8843 /* TestDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AF51B8210A603B004F8843 /* TestDataGenerator.swift */; };
 		73AF51BB210BA03F004F8843 /* CellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AF51BA210BA03F004F8843 /* CellContent.swift */; };
 		73AF51BF210BA710004F8843 /* DynamicContentCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AF51BE210BA710004F8843 /* DynamicContentCell1.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +39,11 @@
 		7371369A21663B6800944AB3 /* BaseTableHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableHeaderFooterView.swift; sourceTree = "<group>"; };
 		7371369C2166590400944AB3 /* ExpandFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandFooterView.swift; sourceTree = "<group>"; };
 		7371369E2166593000944AB3 /* ExpandFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpandFooterView.xib; sourceTree = "<group>"; };
+		737136A02166691500944AB3 /* HideableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideableObject.swift; sourceTree = "<group>"; };
+		737136A22166766300944AB3 /* SectionObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionObject.swift; sourceTree = "<group>"; };
+		737136A4216678D300944AB3 /* HideShowSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideShowSectionController.swift; sourceTree = "<group>"; };
+		737136A6216796F200944AB3 /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		737136A82167998C00944AB3 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
 		73AF519821068202004F8843 /* TableFeatures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableFeatures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73AF519B21068202004F8843 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73AF51A021068202004F8843 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,7 +53,7 @@
 		73AF51B0210A5AC8004F8843 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		73AF51B2210A5B00004F8843 /* ExpandCollapseSectionDynamicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandCollapseSectionDynamicViewController.swift; sourceTree = "<group>"; };
 		73AF51B5210A5F29004F8843 /* TableTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTest.swift; sourceTree = "<group>"; };
-		73AF51B8210A603B004F8843 /* TestDataProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataProcessor.swift; sourceTree = "<group>"; };
+		73AF51B8210A603B004F8843 /* TestDataGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataGenerator.swift; sourceTree = "<group>"; };
 		73AF51BA210BA03F004F8843 /* CellContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellContent.swift; sourceTree = "<group>"; };
 		73AF51BE210BA710004F8843 /* DynamicContentCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicContentCell1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,9 +82,11 @@
 		737136902166366F00944AB3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				737136A6216796F200944AB3 /* BaseCell.swift */,
 				737136942166370700944AB3 /* BaseView.swift */,
-				737136962166382200944AB3 /* UIViewExtensions.swift */,
 				7371369A21663B6800944AB3 /* BaseTableHeaderFooterView.swift */,
+				737136962166382200944AB3 /* UIViewExtensions.swift */,
+				737136A82167998C00944AB3 /* UITableViewExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -158,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				73AF51B2210A5B00004F8843 /* ExpandCollapseSectionDynamicViewController.swift */,
+				737136A4216678D300944AB3 /* HideShowSectionController.swift */,
 			);
 			path = TableTests;
 			sourceTree = "<group>";
@@ -167,6 +180,8 @@
 			children = (
 				73AF51B5210A5F29004F8843 /* TableTest.swift */,
 				73AF51BA210BA03F004F8843 /* CellContent.swift */,
+				737136A02166691500944AB3 /* HideableObject.swift */,
+				737136A22166766300944AB3 /* SectionObject.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,7 +189,7 @@
 		73AF51B7210A601E004F8843 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				73AF51B8210A603B004F8843 /* TestDataProcessor.swift */,
+				73AF51B8210A603B004F8843 /* TestDataGenerator.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -261,15 +276,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73AF51B9210A603B004F8843 /* TestDataProcessor.swift in Sources */,
+				73AF51B9210A603B004F8843 /* TestDataGenerator.swift in Sources */,
 				73AF519C21068202004F8843 /* AppDelegate.swift in Sources */,
 				73AF51B3210A5B00004F8843 /* ExpandCollapseSectionDynamicViewController.swift in Sources */,
 				73AF51B6210A5F29004F8843 /* TableTest.swift in Sources */,
+				737136A7216796F200944AB3 /* BaseCell.swift in Sources */,
 				73AF51B1210A5AC8004F8843 /* HomeViewController.swift in Sources */,
+				737136A92167998C00944AB3 /* UITableViewExtensions.swift in Sources */,
 				7371369B21663B6800944AB3 /* BaseTableHeaderFooterView.swift in Sources */,
 				7315555C21275B570003CD04 /* ExpandHeaderView.swift in Sources */,
+				737136A12166691500944AB3 /* HideableObject.swift in Sources */,
 				737136972166382200944AB3 /* UIViewExtensions.swift in Sources */,
+				737136A5216678D300944AB3 /* HideShowSectionController.swift in Sources */,
 				737136952166370700944AB3 /* BaseView.swift in Sources */,
+				737136A32166766300944AB3 /* SectionObject.swift in Sources */,
 				73AF51BB210BA03F004F8843 /* CellContent.swift in Sources */,
 				73AF51BF210BA710004F8843 /* DynamicContentCell1.swift in Sources */,
 				7371369D2166590400944AB3 /* ExpandFooterView.swift in Sources */,

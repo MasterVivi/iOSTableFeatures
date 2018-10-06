@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BaseTableHeaderFooterView: UITableViewHeaderFooterView
+class BaseTableHeaderFooterView: UITableViewHeaderFooterView, ReusableView
 {
     var view: UIView!
     
@@ -30,8 +30,6 @@ class BaseTableHeaderFooterView: UITableViewHeaderFooterView
     
     private func attachXib()
     {
-        backgroundColor = UIColor.clear
-        
         view = loadNib()
         view.frame = bounds
         addSubview(view)

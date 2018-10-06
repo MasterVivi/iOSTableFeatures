@@ -30,8 +30,6 @@ class BaseView: UIView
     
     private func attachXib()
     {
-        backgroundColor = UIColor.clear
-        
         view = loadNib()
         view.frame = bounds
         addSubview(view)

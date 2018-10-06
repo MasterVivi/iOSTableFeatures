@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class TestDataProcessor
+final class TestDataGenerator
 {
     static func GetTestList() -> Array<TableTest>
     {
@@ -31,6 +31,16 @@ final class TestDataProcessor
             CellContent(HeaderTitle: "", SubHeaderTitle: "This is a subheader title", BodyContent:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.", FooterTitle: ""),
             CellContent(HeaderTitle: "Header Title", SubHeaderTitle: "This is a subheader title", BodyContent:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less", FooterTitle: "This is a footer title"),
             CellContent(HeaderTitle: "Header Title", SubHeaderTitle: "This is a subheader title", BodyContent:"making it look like readable English.", FooterTitle: "This is a footer title"),
+        ]
+    }
+    
+    static func GetRandomDataList2() -> Array<SectionObject>
+    {
+        return [
+            SectionObject(SectionTitle: "First Header", RowArray:["first string", "second string", "third string", "fourth string"], SectionHidden: false),
+            SectionObject(SectionTitle: "Second Header", RowArray:["first string", "second string", "third string", "fourth string"], SectionHidden: true),
+            SectionObject(SectionTitle: "Third Header", RowArray:["first string", "second string", "third string", "fourth string"], SectionHidden: false),
+            SectionObject(SectionTitle: "Fourth Header", RowArray:["first string", "second string", "third string", "fourth string"], SectionHidden: true),
         ]
     }
 }

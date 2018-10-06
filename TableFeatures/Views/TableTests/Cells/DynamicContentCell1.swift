@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class DynamicContentCell1 : UITableViewCell
+class DynamicContentCell1 : UITableViewCell, ReusableView
 {
     // MARK: IBOutlets
     @IBOutlet weak var contentLabel: UILabel!

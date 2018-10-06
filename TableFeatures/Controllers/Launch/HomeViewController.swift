@@ -12,7 +12,7 @@ import UIKit
 class HomeViewController : UITableViewController
 {
     // MARK: Properties
-    let testDataList = TestDataProcessor.GetTestList()
+    let testDataList = TestDataGenerator.GetTestList()
     let firstControllerIdentifier: String = "ExpandCollapseSectionDynamicViewController"
     let tableTestCellIdentifier: String = "TableTestCell"
 }

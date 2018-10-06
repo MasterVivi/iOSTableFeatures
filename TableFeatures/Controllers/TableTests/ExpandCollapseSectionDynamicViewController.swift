@@ -13,17 +13,14 @@ class ExpandCollapseSectionDynamicViewController : UITableViewController
 {
     // MARK: Properties
     
-    let randomContentList = TestDataProcessor.GetRandomDataList1()
-    let tableTestHeaderIdentifier: String = "ExpandHeaderView"
-    let tableTestCellIdentifier: String = "DynamicContentCell1"
-    let tableTestFooterIdentifier: String = "ExpandFooterView"
+    let randomContentList = TestDataGenerator.GetRandomDataList1()
     
     // MARK: View callbacks
     
     override func viewDidLoad()
     {
-        tableView.register(ExpandHeaderView.self, forHeaderFooterViewReuseIdentifier: tableTestHeaderIdentifier)
-        tableView.register(ExpandFooterView.self, forHeaderFooterViewReuseIdentifier: tableTestFooterIdentifier)
+        tableView.register(ExpandHeaderView.self)
+        tableView.register(ExpandFooterView.self)
         
         tableView.sectionHeaderHeight = UITableViewAutomaticDimension
         tableView.rowHeight = UITableViewAutomaticDimension
@@ -48,8 +45,7 @@ extension ExpandCollapseSectionDynamicViewController
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "DynamicContentCell1",
-                                                 for: indexPath) as! DynamicContentCell1
+        let cell : DynamicContentCell1 = tableView.dequeueReusableCell(indexPath: indexPath)
         let data = randomContentList[indexPath.section]
         cell.cellContent = data
         cell.selectionStyle = UITableViewCellSelectionStyle.none
@@ -65,7 +61,7 @@ extension ExpandCollapseSectionDynamicViewController
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?
     {
-        let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: tableTestHeaderIdentifier) as! ExpandHeaderView
+        let headerView : ExpandHeaderView = tableView.dequeueReusableHeaderFooterView()
         let data = randomContentList[section]
         headerView.cellContent = data
         headerView.contentView.backgroundColor = UIColor.gray
@@ -76,7 +72,7 @@ extension ExpandCollapseSectionDynamicViewController
     
     override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView?
     {
-        let footerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: tableTestFooterIdentifier) as! ExpandFooterView
+        let footerView : ExpandFooterView = tableView.dequeueReusableHeaderFooterView()
         let data = randomContentList[section]
         footerView.cellContent = data
         footerView.contentView.backgroundColor = UIColor.cyan
