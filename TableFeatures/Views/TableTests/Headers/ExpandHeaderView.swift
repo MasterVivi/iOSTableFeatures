@@ -30,4 +30,23 @@ class ExpandHeaderView : BaseTableHeaderFooterView
             secondLabel?.isHidden = (cellContent.subHeaderTitle?.count == 0)
         }
     }
+    
+    var singleString: String?
+    {
+        didSet
+        {
+            guard let content = singleString else { return }
+            
+            firstLabel?.text = content
+        }
+    }
+    
+    weak var delegate: GestureRecognizedDelegate?
+    
+    // MARK: Actions
+    
+    @IBAction func tapGestureReceived(_ sender: Any)
+    {
+        delegate?.GestureRecognized(sender: sender)
+    }
 }

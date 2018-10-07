@@ -50,7 +50,16 @@
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="SoB-wc-dL3" appends="YES" id="j1A-wr-HwR"/>
+            </connections>
             <point key="canvasLocation" x="24.5" y="52"/>
         </view>
+        <tapGestureRecognizer id="SoB-wc-dL3">
+            <connections>
+                <action selector="tapGestureReceived:" destination="-1" id="fce-oN-tGL"/>
+                <outlet property="delegate" destination="-1" id="woJ-xh-kEL"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
 </document>

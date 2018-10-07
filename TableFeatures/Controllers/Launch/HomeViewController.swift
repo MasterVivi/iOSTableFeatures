@@ -12,14 +12,19 @@ import UIKit
 class HomeViewController : UITableViewController
 {
     // MARK: Properties
+    
     let testDataList = TestDataGenerator.GetTestList()
     let firstControllerIdentifier: String = "ExpandCollapseSectionDynamicViewController"
+    let secondControllerIdentifier: String = "HideShowSectionController"
     let tableTestCellIdentifier: String = "TableTestCell"
 }
 
 // MARK: UITableViewDataSource
+
 extension HomeViewController
 {
+    // MARK: Cells
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return testDataList.count
@@ -39,6 +44,8 @@ extension HomeViewController
         return cell
     }
     
+    // MARK: Selection
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         var strControllerIdentifier: String?
@@ -47,11 +54,11 @@ extension HomeViewController
         case 0:
             strControllerIdentifier = firstControllerIdentifier
         case 1:
-            strControllerIdentifier = firstControllerIdentifier
+            strControllerIdentifier = secondControllerIdentifier
         case 2:
-            strControllerIdentifier = firstControllerIdentifier
+            strControllerIdentifier = secondControllerIdentifier
         case 3:
-            strControllerIdentifier = firstControllerIdentifier
+            strControllerIdentifier = secondControllerIdentifier
         default:
             preconditionFailure("No identifier for view controller for row: \(indexPath.row)")
         }
